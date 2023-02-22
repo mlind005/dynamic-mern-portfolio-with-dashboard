@@ -1,0 +1,32 @@
+const mongoose =require("mongoose")
+
+const messageSchema = new mongoose.Schema({
+    name:{
+        type:String,
+        default:null
+    },
+    email:{
+        type:String,
+        default:null
+    },
+    phone:{
+        type:String,
+        default:null
+    },
+    message:{
+        type:String,
+        default:null
+    },
+    date:{
+        type:String,
+        default:null
+    },
+   
+    
+})
+
+
+
+const Messages = mongoose.model('messages',messageSchema);
+
+module.exports = Messages;
